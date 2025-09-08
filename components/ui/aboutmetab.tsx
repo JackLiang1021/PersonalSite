@@ -63,7 +63,7 @@ const AboutMeTab: React.FC<Props> = ({ onClose, onFocus, zIndex }) => {
               />
               <TextAboutMe
                 title="Bio"
-                description="I’m Jack Liang, a junior at Indiana University Bloomington studying Computer Science. I love building projects that blend creativity and technology—from AI trading agents and web apps to game mods and simulations. Outside of class, I work as an Undergraduate Instructor teaching Java labs. I’m always exploring new ways to learn, create, and share knowledge."
+                description="I’m Jack Liang, a Senior at Indiana University Bloomington studying Computer Science. I love building projects that blend creativity and technology, from AI trading agents and web apps to game mods and simulations. Outside of class, I work as an Undergraduate Instructor teaching Java labs. I’m always exploring new ways to learn, create, and share knowledge."
               />
             </div>
           </div>
