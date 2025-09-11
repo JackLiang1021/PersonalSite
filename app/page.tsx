@@ -37,20 +37,20 @@ export default function Home() {
   const openAndFocus = (key: Key) => {
     if (key === "about") {
       setShowAbout(true);
-      track("Button Clicked", { location: "About" });
+      track("Button Clicked");
     }
     if (key === "skills") {
       setShowSkills(true);
-      track("Button Clicked", { location: "Skills" });
+      track("Button Clicked");
     }
 
     if (key === "projects") {
       setShowProject(true);
-      track("Button Clicked", { location: "projects" });
+      track("Button Clicked");
     }
     if (key === "contacts") {
       setShowContact(true);
-      track("Button Clicked", { location: "contacts" });
+      track("Button Clicked");
     }
 
     bringToFront(key);
