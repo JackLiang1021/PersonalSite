@@ -35,6 +35,7 @@ export default function Home() {
   };
 
   const openAndFocus = (key: Key) => {
+    track("Portfolio items Clicked");
     if (key === "about") {
       setShowAbout(true);
       track("Button Clicked");
