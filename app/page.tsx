@@ -11,7 +11,7 @@ import AboutMeTab from "@/components/ui/aboutmetab";
 import SkillsTab from "@/components/ui/skillstab";
 import ProjectsTab from "@/components/ui/projects";
 import ContactTab from "@/components/ui/contacttab";
-import BoidsBackground from "@/components/BoidsBackground";
+import { track } from "@vercel/analytics";
 
 type Key = "about" | "skills" | "projects" | "contacts";
 
@@ -35,10 +35,24 @@ export default function Home() {
   };
 
   const openAndFocus = (key: Key) => {
-    if (key === "about") setShowAbout(true);
-    if (key === "skills") setShowSkills(true);
-    if (key === "projects") setShowProject(true);
-    if (key === "contacts") setShowContact(true);
+    if (key === "about") {
+      setShowAbout(true);
+      track("Button Clicked", { location: "About" });
+    }
+    if (key === "skills") {
+      setShowSkills(true);
+      track("Button Clicked", { location: "Skills" });
+    }
+
+    if (key === "projects") {
+      setShowProject(true);
+      track("Button Clicked", { location: "projects" });
+    }
+    if (key === "contacts") {
+      setShowContact(true);
+      track("Button Clicked", { location: "contacts" });
+    }
+
     bringToFront(key);
   };
 

@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
 import { Share_Tech_Mono } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-
-
 const shareTechMono = Share_Tech_Mono({
-  weight: "400",  
+  weight: "400",
   variable: "--font-share-tech-mono",
 });
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,11 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body
-        className={`${shareTechMono.variable} antialiased`}
-      >
-        <Analytics/>
+      <body className={`${shareTechMono.variable} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
