@@ -38,20 +38,21 @@ export default function Home() {
     track("Portfolio items Clicked");
     if (key === "about") {
       setShowAbout(true);
-      track("Button Clicked");
+      track("About Clicked");
     }
     if (key === "skills") {
       setShowSkills(true);
-      track("Button Clicked");
+      track("Skills Clicked");
     }
 
     if (key === "projects") {
       setShowProject(true);
-      track("Button Clicked");
+      track("Projects Clicked");
     }
     if (key === "contacts") {
       setShowContact(true);
-      track("Button Clicked");
+      track("Contacts Clicked");
+      console.log("Test");
     }
 
     bringToFront(key);
