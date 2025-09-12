@@ -132,6 +132,7 @@ export default function Home() {
           zIndex={zFor("contacts")}
         />
       )}
+      <h1>v1.0.1</h1>
     </div>
   );
 }
