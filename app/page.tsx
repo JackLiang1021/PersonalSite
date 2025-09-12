@@ -132,7 +132,7 @@ export default function Home() {
           zIndex={zFor("contacts")}
         />
       )}
-      <h1>v1.0.1</h1>
+      <h1 className="mt-5 bg-muted px-2 py-0.5 rounded">v1.0.2</h1>
     </div>
   );
 }
