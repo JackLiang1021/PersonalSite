@@ -48,6 +48,12 @@ const ProjectsTab: React.FC<Props> = ({ onClose, onFocus, zIndex }) => {
             <div className="p-4 space-y-5 max-h-[500px] overflow-y-auto overflow-x-hidden custom-scrollbar">
               <Separator className="my-3" />
               <Projects
+                title="EVOPicutre"
+                description="This is a recreation of the algorithm he used within this video the shapes i used were text with different fonts and colors The process right now is slow and there will be a attempt at making a faster one using c++ and opengl"
+                link="https://github.com/JackLiang1021/EvolutionaryPicture"
+                skills={["Python", "PIL", "Numpy", "Evolution"]}
+              ></Projects>
+              <Projects
                 title="Url Shortener"
                 description="This project is a lightweight backend URL shortener service built using Spring Boot and Java. It was created to support my portfolio by allowing me to share clean, shortened links to my projects on my resume. When showcasing projects, full-length URLs can clutter a resume or portfolio. This backend service provides a neat solution by generating shortened links under my personal domain, jakl.work. It’s currently backend-only, but frontend integration is planned as part of my personal website. "
                 link="https://github.com/JackLiang1021/UrlShortenerBackEnd"
