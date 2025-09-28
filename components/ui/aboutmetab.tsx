@@ -32,7 +32,10 @@ const AboutMeTab: React.FC<Props> = ({ onClose, onFocus, zIndex }) => {
       >
         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
           {/* Title bar */}
-          <div className="w-[200px] rounded-lg border bg-card text-card-foreground shadow md:w-[600px] overflow-y-auto h-[400px] md:h-full">
+          <div
+            className="w-[200px] md:w-[600px] rounded-lg border bg-card text-card-foreground shadow
+                  h-[400px] md:h-[520px] flex flex-col"
+          >
             <div className="titlebar flex items-center justify-between px-3 py-2 cursor-move select-none bg-muted/50 border-b">
               <h1 className="text-sm font-medium">About Me</h1>
               <button
@@ -45,7 +48,7 @@ const AboutMeTab: React.FC<Props> = ({ onClose, onFocus, zIndex }) => {
             </div>
 
             {/* Content */}
-            <div className="p-4 space-y-5">
+            <div className="p-4 space-y-5 overflow-y-auto overflow-x-hidden custom-scrollbar">
               <Separator className="my-3" />
               <TextAboutMe title="Name" description="Jack Liang" />
               <TextAboutMe
@@ -65,6 +68,9 @@ const AboutMeTab: React.FC<Props> = ({ onClose, onFocus, zIndex }) => {
                 title="Bio"
                 description="I’m Jack Liang, a Senior at Indiana University Bloomington studying Computer Science. I love building projects that blend creativity and technology, from AI trading agents and web apps to game mods and simulations. Outside of class, I work as an Undergraduate Instructor teaching Java labs. I’m always exploring new ways to learn, create, and share knowledge."
               />
+              <div className="text-center border-1 rounded-xl text-muted-foreground p-2 md:hidden">
+                fin.
+              </div>
             </div>
           </div>
         </motion.div>

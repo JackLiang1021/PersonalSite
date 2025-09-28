@@ -20,7 +20,7 @@ const SkillsTab: React.FC<Props> = ({ onClose, onFocus, zIndex }) => {
       nodeRef={nodeRef}
       handle=".titlebar"
       cancel=".no-drag"
-      defaultPosition={{ x: Math.random()*200, y: Math.random()*200 }}
+      defaultPosition={{ x: Math.random() * 200, y: Math.random() * 200 }}
       onStart={onFocus}
     >
       <div
@@ -30,7 +30,10 @@ const SkillsTab: React.FC<Props> = ({ onClose, onFocus, zIndex }) => {
         style={{ zIndex: zIndex ?? 1 }}
       >
         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
-          <div className="w-[200px] rounded-lg border bg-card text-card-foreground shadow md:w-[600px] overflow-y-auto h-[400px] md:h-full  ">
+          <div
+            className="w-[200px] md:w-[600px] rounded-lg border bg-card text-card-foreground shadow
+                  h-[400px] md:h-[520px] flex flex-col"
+          >
             {/* Title bar */}
             <div className="titlebar flex items-center justify-between px-3 py-2 cursor-move select-none bg-muted/50 border-b">
               <h1 className="text-sm font-medium">Skills</h1>
@@ -44,7 +47,7 @@ const SkillsTab: React.FC<Props> = ({ onClose, onFocus, zIndex }) => {
             </div>
 
             {/* Content */}
-            <div className="p-4 space-y-5">
+            <div className="p-4 space-y-5 overflow-y-auto overflow-x-hidden custom-scrollbar">
               <Separator className="my-3" />
               <TextAboutMe
                 title="Programming Languages"
@@ -58,6 +61,9 @@ const SkillsTab: React.FC<Props> = ({ onClose, onFocus, zIndex }) => {
                 title="Frameworks"
                 description="Pytorch, TensorFlow, YOLO, Next.js, Vite.js, React"
               />
+              <div className="text-center border-1 rounded-xl text-muted-foreground p-2 md:hidden">
+                fin.
+              </div>
             </div>
           </div>
         </motion.div>

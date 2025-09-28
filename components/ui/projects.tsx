@@ -31,7 +31,7 @@ const ProjectsTab: React.FC<Props> = ({ onClose, onFocus, zIndex }) => {
         style={{ zIndex: zIndex ?? 1 }}
       >
         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
-          <div className="w-[200px] rounded-lg border bg-card text-card-foreground shadow md:w-[600px] overflow-y-auto h-auto  ">
+          <div className="w-[200px] rounded-lg border bg-card text-card-foreground shadow md:w-[600px]">
             {/* Title bar */}
             <div className="titlebar flex items-center justify-between px-3 py-2 cursor-move select-none bg-muted/50 border-b">
               <h1 className="text-sm font-medium">Projects</h1>
@@ -116,6 +116,7 @@ const ProjectsTab: React.FC<Props> = ({ onClose, onFocus, zIndex }) => {
               <div className="text-center border-1 rounded-xl text-muted-foreground p-2">
                 fin.
               </div>
+              
             </div>
           </div>
         </motion.div>
