@@ -30,7 +30,7 @@ const SkillsTab: React.FC<Props> = ({ onClose, onFocus, zIndex }) => {
         style={{ zIndex: zIndex ?? 1 }}
       >
         <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
-          <div className="w-[600px] rounded-lg border bg-card text-card-foreground shadow ">
+          <div className="w-[200px] rounded-lg border bg-card text-card-foreground shadow md:w-[600px] overflow-y-auto h-[400px] md:h-full  ">
             {/* Title bar */}
             <div className="titlebar flex items-center justify-between px-3 py-2 cursor-move select-none bg-muted/50 border-b">
               <h1 className="text-sm font-medium">Skills</h1>

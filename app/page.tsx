@@ -61,8 +61,8 @@ export default function Home() {
   return (
     <div className="bg-background text-foreground h-screen flex justify-center pt-5 overflow-hidden relative bg-[url('/graph-paper.svg')] flex-col items-center">
       {/* <BoidsBackground/> */}
-      <h1 className=" text-7xl">JACK LIANG</h1>
-      <div className="h-fit w-[800px] border p-2 rounded-xl">
+      <h1 className=" md:text-7xl text-4xl">JACK LIANG</h1>
+      <div className="md:w-[800px] h-fit w-[200px] border p-2 rounded-xl ">
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
             <AccordionTrigger>portfolio.txt</AccordionTrigger>
